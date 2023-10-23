@@ -4,7 +4,7 @@
 # @Author : github@wd210010 https://github.com/wd210010/only_for_happly
 # @Time : 2023/10/4 16:23
 # -------------------------------
-# cron "0 0 2 * * *" script-path=xxx.py,tag=匹配cron用
+# cron "0 2 0 * * *" script-path=xxx.py,tag=匹配cron用
 # const $ = new Env('恩山签到')
 import requests,re,os
 
