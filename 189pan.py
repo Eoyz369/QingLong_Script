@@ -1,5 +1,9 @@
-#来源：https://github.com/y377/189pan
 
+"""
+source: https://github.com/y377/189pan
+cron: 30 7 * * *
+# const $ = new Env('天翼网盘签到')
+"""
 import time
 import re
 import json
