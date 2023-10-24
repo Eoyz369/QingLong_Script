@@ -1,7 +1,7 @@
 
 """
 source: https://github.com/y377/189pan
-cron: 30 7 * * *
+cron: 30 9 * * *
 # const $ = new Env('天翼网盘签到')
 """
 import time
