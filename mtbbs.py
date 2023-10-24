@@ -9,7 +9,7 @@ mt论坛自动签到
 账号1：1234 密码：1234
 则变量为10086&1001@1234&1234
 export mtluntan=""
-
+new Env('MT论坛签到');
 cron: 0 0,7 * * *
 const $ = new Env("mt论坛");
 """
