@@ -1,6 +1,5 @@
 # 获取token_online
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c00b6590-947f-4e3d-b337-88da03061681/Untitled.png)
 
 ### 发送短信验证码
 
@@ -41,4 +40,4 @@
 3. 配置短信登录验证码的环境变量 `ChinaUnicom_10010v4_code`
 4. 执行 `短信登录验证码登录`
 
-运行【短信登录验证码登录】完后，查看文件的日志，里面往下翻就能找到我们需要的token_online
+运行`短信登录验证码登录`完后，查看文件的日志，里面往下翻就能找到我们需要的`token_online`
