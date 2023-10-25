@@ -4,7 +4,7 @@ source: https://github.com/leafTheFish
 包含以下功能:
 话费红包签到, 阅读专区抽奖, 龟兔赛跑, 阅光宝盒
 定时每天两三次
-
+ 
 需要在联通APP中选择退出登录-切换账号登录, 捉下面这个包
 https://m.client.10010.com/mobileService/onLine.htm
 把请求体(body)里面的token_online参数填到变量 chinaUnicomCookie 里, 多账号换行或&或@隔开:
