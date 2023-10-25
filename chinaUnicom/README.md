@@ -1,4 +1,4 @@
-# 拉文件
+# 获取token_online
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c00b6590-947f-4e3d-b337-88da03061681/Untitled.png)
 
@@ -27,14 +27,18 @@
 ### 短信验证码登录(方式2)
 
 `ql raw https://github.com/ChinaTelecomOperators/ChinaUnicom/releases/download/Prerelease-Alpha/10010_sms_sign2.js`   
-设置环境变量：
 
-名称：【ChinaUnicom_10010v4_mobile】 值：1XXXXXXXXX(手机号)
 
-【这一步填写完后，运行上面第一个文件，会发送一个验证码到你手机号，验证码输入到下面的这个值里】
+# 使用短信验证码登录
 
-名称：【ChinaUnicom_10010v4_code】 值：（这里填的是上面运行后收到的短信验证码）
+<aside>
+⚠️ 默认操作如果无法进行短信验证码登录, 请尝试 `方式2`, 见上方 `拉文件` 中带 `方式2` 的文件
 
-【然后运行上面的第二个文件】
+</aside>
 
-运行完后，查看第二个文件的日志，里面往下翻就能找到我们需要的token_online
+1. 配置手机号的环境变量 `ChinaUnicom_10010v4_mobile`
+2. 执行 `发送短信登录验证码`
+3. 配置短信登录验证码的环境变量 `ChinaUnicom_10010v4_code`
+4. 执行 `短信登录验证码登录`
+
+运行【短信登录验证码登录】完后，查看文件的日志，里面往下翻就能找到我们需要的token_online
