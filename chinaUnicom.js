@@ -1,6 +1,6 @@
 /*
 中国联通 v1.07
-
+source: https://github.com/leafTheFish
 包含以下功能:
 话费红包签到, 阅读专区抽奖, 龟兔赛跑, 阅光宝盒
 定时每天两三次
