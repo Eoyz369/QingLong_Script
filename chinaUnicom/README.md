@@ -1,5 +1,6 @@
 # 获取token_online
-
+参考文章[查看](https://chinatelecomoperators.notion.site/chinatelecomoperators/ChinaUnicom-5959008dfc2a477baf90471682f770fd)   
+作者[ChinaTelecomOperators](https://github.com/ChinaTelecomOperators/ChinaUnicom)   
 
 ### 发送短信验证码
 
@@ -41,3 +42,8 @@
 4. 执行 `短信登录验证码登录`
 
 运行`短信登录验证码登录`完后，查看文件的日志，里面往下翻就能找到我们需要的`token_online`
+
+<aside>
+🤔 因为开发者懒 如果你要更换当前使用的账号 请自行清空所有数据(青龙清除环境变量和.dat文件) 保证无脏数据后 再使用
+
+</aside>
