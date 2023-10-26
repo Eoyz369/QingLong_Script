@@ -1,5 +1,6 @@
 /*
 cron: 59 15 8 * * *
+const $ = new Env("王者营地每日签到");
 王者营地每日签到
 自己抓包找到msdkEncodeParam参数并设置到变量WZYD_TOKEN里
 Source: hhttps://github.com/NaroisCool/naro-scripts
