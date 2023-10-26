@@ -2,6 +2,7 @@
 cron: 59 15 8 * * *
 王者营地每日签到
 自己抓包找到msdkEncodeParam参数并设置到变量WZYD_TOKEN里
+Source: hhttps://github.com/NaroisCool/naro-scripts
 */
 const axios = require('axios')
 const notify = require('./sendNotify')
@@ -27,11 +28,11 @@ const header =  {
 const payload = {"cSystem":"ios","h5Get":1,"roleId":"1685189495"}
 
 axios.post('https://kohcamp.qq.com/operation/action/signin',payload,{headers:header} )
-.then((res) => {
+。then((res) => {
   notify.sendNotify('王者营地签到结果',JSON.stringify(res.data))
   console.log(`statusCode: ${res.data.returnMsg}`)
   console.log(res)
 })
-.catch((error) => {
+。catch((error) => {
   console.error(error)
 })
