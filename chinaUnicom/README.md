@@ -1,6 +1,6 @@
 # 获取token_online
-参考文章[[查看](https://chinatelecomoperators.notion.site/chinatelecomoperators/ChinaUnicom-5959008dfc2a477baf90471682f770fd)]   
-作者[[@ChinaTelecomOperators](https://github.com/ChinaTelecomOperators/ChinaUnicom)]   
+鸣谢 [@leafTheFish](https://github.com/leafTheFish/) | [@ChinaTelecomOperators](https://github.com/ChinaTelecomOperators/)    
+参考文章[[查看](https://chinatelecomoperators.notion.site/chinatelecomoperators/ChinaUnicom-5959008dfc2a477baf90471682f770fd)]    
 
 ### 发送短信验证码
 
