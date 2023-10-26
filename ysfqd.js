@@ -1,4 +1,5 @@
 /**
+ * Source: https://github.com/smallfawn/QLScriptPublic
  * new Env("云闪付签到");
  * cron 5 8 * * *  ysfqd.js
  * Show: 
