@@ -1,6 +1,6 @@
 /*
 顺丰速运 v2.05
-
+Source: https://github.com/leafTheFish
 包含积分任务和采蜜游戏
 
 采蜜游戏入口: 我的-积分抽奖-拉到最下面收件兑奖
