@@ -29,7 +29,7 @@ const header =  {
 const payload = {"cSystem":"ios","h5Get":1,"roleId":"1685189495"}
 
 axios.post('https://kohcamp.qq.com/operation/action/signin',payload,{headers:header} )
-。then((res) => {
+then((res) => {
   notify.sendNotify('王者营地签到结果',JSON.stringify(res.data))
   console.log(`statusCode: ${res.data.returnMsg}`)
   console.log(res)
