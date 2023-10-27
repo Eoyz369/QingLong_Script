@@ -7,4 +7,4 @@
 
 ### Star History
 
-[![Stargazers over time](https://starchart.cc/Eoyz369/QingLong.svg)](https://github.com/Eoyz369/QingLong_Script) 
+[![Stargazers over time](https://starchart.cc/Eoyz369/QingLong_Script.svg)](https://github.com/Eoyz369/QingLong_Script) 
