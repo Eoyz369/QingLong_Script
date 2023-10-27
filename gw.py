@@ -11,7 +11,7 @@ import requests
 import os
 
 '''
-export gw='邮箱&密码' 多账号#号割开   机场注册地址https://balala.io/auth/register?code=dnL6
+export gw='邮箱&密码' 多账号#号割开   机场注册地址https://balala.io/auth/register?code=WjsPJ6
 '''
 def main():
     r = 1
