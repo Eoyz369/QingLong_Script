@@ -1,6 +1,8 @@
 #!/usr/bin/python3  
 # -- coding: utf-8 --
 # @Time : 2023/6/30 10:23
+# @Author : github@wd210010
+# @Source : https://github.com/wd210010/only_for_happly
 # -------------------------------
 # cron "0 0 6,8,20 * * *" script-path=xxx.py,tag=匹配cron用
 # const $ = new Env('雨云签到');
@@ -8,7 +10,7 @@
 import json,requests,os,time
 
 
-##变量雨云账号密码 注册地址https://www.rainyun.com/NTY1NzY=_   登录后积分中心里面 赚钱积分 (如绑定微信 直接就有2000分）就可以用积分兑换主机 需要每天晚上八点蹲点
+##变量雨云账号密码 注册地址https://www.rainyun.com/MTQwODE4_   登录后积分中心里面 赚钱积分 (如绑定微信 直接就有2000分）就可以用积分兑换主机 需要每天晚上八点蹲点
 yyusername=os.getenv("yyusername")
 yypassword=os.getenv("yypassword")
 
