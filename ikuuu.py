@@ -1,10 +1,17 @@
+# @Source：https://github.com/bighammer-link/jichang_dailycheckin
+# -------------------------------
+# cron "30 4 * * *" script-path=xxx.py,tag=匹配cron用
+# const $ = new Env('ikuuu机场签到')
+# 注册地址：https://ikuuu.art/auth/register?code=lzQE
+
+
 import requests, json, re, os
 
 session = requests.session()
 # 配置用户名（一般是邮箱）
-email = os.environ.get('EMAIL')
+email = os.environ.get('ikuuuEMAIL')
 # 配置用户名对应的密码 和上面的email对应上
-passwd = os.environ.get('PASSWD')
+passwd = os.environ.get('ikuuuPASSWD')
 # server酱
 SCKEY = os.environ.get('SCKEY')
 
