@@ -3,7 +3,6 @@
 # -*- coding:utf-8 -*-
 
 """
-source: https://github.com/y377/189pan
 cron: 6 1 * * *
 # const $ = new Env('百度贴吧签到')
 """
