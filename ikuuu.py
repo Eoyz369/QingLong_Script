@@ -2,7 +2,7 @@
 # -------------------------------
 # cron "30 4 * * *" script-path=xxx.py,tag=匹配cron用
 # const $ = new Env('ikuuu机场签到')
-# 注册地址：https://ikuuu.art/auth/register?code=lzQE
+# 注册地址：https://ikuuu.me/auth/register?code=lzQE
 
 
 import requests, json, re, os
@@ -15,9 +15,9 @@ passwd = os.environ.get('ikuuuPASSWD')
 # server酱
 SCKEY = os.environ.get('SCKEY')
 
-login_url = 'https://ikuuu.art/auth/login'
-check_url = 'https://ikuuu.art/user/checkin'
-info_url = 'https://ikuuu.art/user/profile'
+login_url = 'https://ikuuu.me/auth/login'
+check_url = 'https://ikuuu.me/user/checkin'
+info_url = 'https://ikuuu.me/user/profile'
 
 header = {
         'origin': 'https://ikuuu.art',
