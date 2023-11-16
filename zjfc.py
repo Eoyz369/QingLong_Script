@@ -2,6 +2,8 @@
 # -- coding: utf-8 --
 # -------------------------------
 # @Time : 2023/2/27 13:23
+# @Author : @wd210010
+# @Source : https://github.com/wd210010/only_for_happly
 # -------------------------------
 # cron "0 7,10 * * *" script-path=xxx.py,tag=匹配cron用
 # const $ = new Env('浙江福彩抽奖')
