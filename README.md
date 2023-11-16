@@ -5,6 +5,6 @@
 ![Visitor Count](https://profile-counter.glitch.me/QingLong_Script/count.svg)   
 
 
-### Star History
+### Star History 点亮项目星星！
 
-[![Stargazers over time](https://starchart.cc/Eoyz369/QingLong_Script.svg)](https://github.com/Eoyz369/QingLong_Script) 
+[![Star History Chart](https://api.star-history.com/svg?repos=Eoyz369/QingLong_Script&type=Date)](https://star-history.com/#Eoyz369/QingLong_Script&Date)
