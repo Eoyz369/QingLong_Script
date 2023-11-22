@@ -310,5 +310,5 @@ if __name__ == "__main__":
     while 1:
         email =os.getenv("pikpakNAME")        
         password = os.getenv("pikpakPWD")
-        start(email, pasPsword)
+        start(email, password)
         break
