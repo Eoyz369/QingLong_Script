@@ -23,8 +23,8 @@ function updateAccesssToken(queryBody, remarks) {
     data: queryBody,
     headers: { 'Content-Type': 'application/json' }
   })
-    .then(d => d.data)
-    .then(d => {
+    。then(d => d.data)
+    。then(d => {
       const { code, message, nick_name, refresh_token, access_token } = d
       if (code) {
         if (
