@@ -305,8 +305,11 @@ def start(email, password):
 
 
 if __name__ == "__main__":
+    
     print("COPYRIGHT@纸鸢花的花语，程序仅供交流学习，请勿用于商业用途。")
+    print("@Eoyz369 | 适配青龙使用 ")
     print("该程序为自动完成PIKPAK安装拓展任务而写，所以每个账号只有一次机会，但不掉。")
+    
     while 1:
         email =os.getenv("pikpakNAME")        
         password = os.getenv("pikpakPWD")
