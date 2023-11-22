@@ -1,9 +1,7 @@
-/*
-美团 v3.12
-Source: https://github.com/leafTheFish
+
 /*
 美团 v3.13
-
+Source: https://github.com/leafTheFish
 美团V3仅支持青龙等nodejs环境, 不支持圈X
 自动领券和完成一些活动任务
 建议按推荐定时跑, 每天10点15点17点有券可以抽
