@@ -23,8 +23,8 @@ function updateAccesssToken(queryBody, remarks) {
     data: queryBody,
     headers: { 'Content-Type': 'application/json' }
   })
-    。then(d => d.data)
-    。then(d => {
+    .then(d => d.data)
+    .then(d => {
       const { code, message, nick_name, refresh_token, access_token } = d
       if (code) {
         if (
@@ -37,7 +37,7 @@ function updateAccesssToken(queryBody, remarks) {
       }
       return { nick_name, refresh_token, access_token }
     })
-    。catch(e => {
+    .catch(e => {
       errorMessage.push(e.message)
       return Promise.reject(errorMessage.join(', '))
     })
@@ -56,8 +56,8 @@ function sign_in(access_token, remarks) {
       'Content-Type': 'application/json'
     }
   })
-    。then(d => d.data)
-    。then(async json => {
+    .then(d => d.data)
+    .then(async json => {
       if (!json.success) {
         sendMessage.push('签到失败', json.message)
         return Promise.reject(sendMessage.join(', '))
@@ -208,4 +208,3 @@ async function getRefreshToken() {
   }
   await notify.sendNotify(`阿里云盘签到`, message.join('\n'))
 })()
-
