@@ -18,11 +18,11 @@ const CLIENT_SECRET = process.env.CLIENT_SECRET
 function getQLToken() {
   return new Promise((resolve, reject) => {
     axios
-      。get(
+      .get(
         QL_URL +
           `/open/auth/token?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}`
       )
-      。then(res => {
+      .then(res => {
         if (res.data.code === 200) {
           resolve(res.data.data.token)
         } else {
