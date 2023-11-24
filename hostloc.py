@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 //更新时间：2023/11/12
-//作者：wdvipa
+//作者：wdvipa 
+//来源: https://github.com/wdvipa/hostloc_getPoints
 //支持青龙和actions定时执行
 //使用方法：创建变量 名字：HostLoc 内容的写法：账号,密码  多个账号用回车键隔开
 //例如: 
@@ -321,7 +322,7 @@ class HostLocanelQd(object):
     ####################
     {}
     ####################
-    祝您过上美好的一天！'''。format(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time() + 28800)),
+    祝您过上美好的一天！'''.format(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time() + 28800)),
                                   self.Result)
         print(message)
         msgs = msgs + '\n' + message
