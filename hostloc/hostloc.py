@@ -11,6 +11,7 @@ bbbb,22222
 //更新内容：支持青龙执行
 //如需推送将需要的推送写入变量HostLoc_fs即可多个用&隔开
 如:变量内输入push需再添加HostLoc_push变量 内容是push的token即可
+# cron: 2 0,9 * * *
 """
 import random
 import textwrap
