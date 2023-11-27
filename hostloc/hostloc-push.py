@@ -3,7 +3,7 @@
 # 修改作者：Eoyz369
 # 开源代码: https://github.com/w2r/hostloc2tg
 # license：Apache-2.0 license
-
+# cron: 57 0,9 * * *
 
 import requests
 import time
@@ -34,7 +34,7 @@ while True:
                     hostloc_list.append(i['主题ID'])
                     hostloc_title = hostloc_title[1::]
                     hostloc_title.append(i['主题'])
-                    a = "https://hostloc.com/thread-{0}-1-1.html"。format(i['主题ID'])
+                    a = "https://hostloc.com/thread-{0}-1-1.html".format(i['主题ID'])
                     time_1 = time.strftime("%Y-%m-%d  %H:%M:%S", time.localtime())
                     # 发送内容
                     text_content = ''
@@ -69,11 +69,11 @@ while True:
                     if img_url:
                         # 判断匿名贴
                         if i['发布者'] == "匿名":
-                            auth = '''<a>{}</a>'''。format(i['发布者'])
+                            auth = '''<a>{}</a>'''.format(i['发布者'])
                         else:
-                            auth = '''<a href="{0}">{1}</a>'''。format(i['发布者链接'], i['发布者'])
-                        text_tg = '主        题：' + "<b>{}</b>"。format(i['主题']。replace("&", "%26")。replace("<", "%26lt%3b")。replace(">"， "%26gt%3b")。replace("#", " ")) + '\n' + '发  布  者：' + auth + '\n' + '时        间：' + time_1 + '\n' + '内容预览：' + '''<b>{0}</b>'''.format(text_content[0:800].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + "\n" + "直达链接： " + a
-                        text_short = '主        题：' + "<b>{}</b>".format(i['主题'].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b")。replace("#", " ")) + '\n' + '发  布  者：' + auth + '\n' + '时        间：' + time_1 + '\n' + '内容预览：' + '''<b>{0}</b>'''.format(text_content[0:100].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + "\n" + "直达链接： " + a
+                            auth = '''<a href="{0}">{1}</a>'''.format(i['发布者链接'], i['发布者'])
+                        text_tg = '主        题：' + "<b>{}</b>".format(i['主题'].replace("&", "%26").replace("<", "%26lt%3b").replace(">"， "%26gt%3b").replace("#", " ")) + '\n' + '发  布  者：' + auth + '\n' + '时        间：' + time_1 + '\n' + '内容预览：' + '''<b>{0}</b>'''.format(text_content[0:800].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + "\n" + "直达链接： " + a
+                        text_short = '主        题：' + "<b>{}</b>".format(i['主题'].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + '\n' + '发  布  者：' + auth + '\n' + '时        间：' + time_1 + '\n' + '内容预览：' + '''<b>{0}</b>'''.format(text_content[0:100].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + "\n" + "直达链接： " + a
                         media_group = []
                         print(img_url)
                         for i2 in range(len(img_url)):
@@ -95,8 +95,8 @@ while True:
                             auth = '''<a>{}</a>'''.format(i['发布者'])
                         else:
                             auth = '''<a href="{0}">{1}</a>'''.format(i['发布者链接'], i['发布者'])
-                        text_tg = '主        题：' + "<b>{}</b>".format(i['主题'].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b")。replace("#", " ")) + '\n' + '发  布  者：' + auth + '\n' + '时        间：' + time_1 + '\n' + '内容预览：' + '''<b>{0}</b>'''.format(text_content[0:800].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + "\n" + "直达链接： " + a
-                        text_short = '主        题：' + "<b>{}</b>".format(i['主题'].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b")。replace("#", " ")) + '\n' + '发  布  者：' + auth + '\n' + '时        间：' + time_1 + '\n' + '内容预览：' + '''<b>{0}</b>'''.format(text_content[0:100].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + "\n" + "直达链接： " + a
+                        text_tg = '主        题：' + "<b>{}</b>".format(i['主题'].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + '\n' + '发  布  者：' + auth + '\n' + '时        间：' + time_1 + '\n' + '内容预览：' + '''<b>{0}</b>'''.format(text_content[0:800].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + "\n" + "直达链接： " + a
+                        text_short = '主        题：' + "<b>{}</b>".format(i['主题'].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + '\n' + '发  布  者：' + auth + '\n' + '时        间：' + time_1 + '\n' + '内容预览：' + '''<b>{0}</b>'''.format(text_content[0:100].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + "\n" + "直达链接： " + a
                         # 推送全部内容
                         bot.send_message(chat_id=CHANNEL_ID, text=text_tg, disable_web_page_preview=True, parse_mode=telegram.ParseMode.HTML)
                         bot.send_message(chat_id=CHANNEL_ID_2, text=text_short, disable_web_page_preview=True, parse_mode=telegram.ParseMode.HTML)
