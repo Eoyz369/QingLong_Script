@@ -18,8 +18,6 @@ CHANNEL_ID = os.getenv("CHANNEL_ID")
 CHANNEL_ID_2 = os.getenv("CHANNEL_ID_2")
 bot = telegram.Bot(token=TOKEN)
 
-
-
 hostloc_list = ["1", "2", "3", "4", "5", "6"]
 hostloc_title = ["1", "2", "3", "4", "5", "6"]
 url_1 = "https://www.hostloc.com/"
@@ -105,4 +103,3 @@ while True:
     except Exception:
         print("网络错误，请稍后重试")
     time.sleep(5)
-
