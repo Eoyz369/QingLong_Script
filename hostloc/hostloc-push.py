@@ -1,15 +1,21 @@
 # encoding=utf-8
+# 修改适配青龙面板使用
+# 修改作者：Eoyz369
+# 开源代码: https://github.com/w2r/hostloc2tg
+# license：Apache-2.0 license
+
 
 import requests
 import time
 from urllib import parse
 import telegram
 from telegram import InputMediaPhoto
+import os
 
 # CHANNEL_ID为简洁模式，CHANNEL_ID_2为完整推送
-TOKEN = ""
-CHANNEL_ID = ""
-CHANNEL_ID_2 = ""
+TOKEN = os.getenv("BOT_TOKEN")
+CHANNEL_ID = os.getenv("CHANNEL_ID")
+CHANNEL_ID_2 = os.getenv("CHANNEL_ID_2")
 bot = telegram.Bot(token=TOKEN)
 
 
