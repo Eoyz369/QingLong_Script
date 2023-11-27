@@ -19,6 +19,7 @@ CHANNEL_ID_2 = os.getenv("CHANNEL_ID_2")
 bot = telegram.Bot(token=TOKEN)
 
 
+
 hostloc_list = ["1", "2", "3", "4", "5", "6"]
 hostloc_title = ["1", "2", "3", "4", "5", "6"]
 url_1 = "https://www.hostloc.com/"
@@ -72,7 +73,7 @@ while True:
                             auth = '''<a>{}</a>'''.format(i['发布者'])
                         else:
                             auth = '''<a href="{0}">{1}</a>'''.format(i['发布者链接'], i['发布者'])
-                        text_tg = '主        题：' + "<b>{}</b>".format(i['主题'].replace("&", "%26").replace("<", "%26lt%3b").replace(">"， "%26gt%3b").replace("#", " ")) + '\n' + '发  布  者：' + auth + '\n' + '时        间：' + time_1 + '\n' + '内容预览：' + '''<b>{0}</b>'''.format(text_content[0:800].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + "\n" + "直达链接： " + a
+                        text_tg = '主        题：' + "<b>{}</b>".format(i['主题'].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + '\n' + '发  布  者：' + auth + '\n' + '时        间：' + time_1 + '\n' + '内容预览：' + '''<b>{0}</b>'''.format(text_content[0:800].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + "\n" + "直达链接： " + a
                         text_short = '主        题：' + "<b>{}</b>".format(i['主题'].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + '\n' + '发  布  者：' + auth + '\n' + '时        间：' + time_1 + '\n' + '内容预览：' + '''<b>{0}</b>'''.format(text_content[0:100].replace("&", "%26").replace("<", "%26lt%3b").replace(">", "%26gt%3b").replace("#", " ")) + "\n" + "直达链接： " + a
                         media_group = []
                         print(img_url)
@@ -104,3 +105,4 @@ while True:
     except Exception:
         print("网络错误，请稍后重试")
     time.sleep(5)
+
