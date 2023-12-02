@@ -1,3 +1,10 @@
+# 修改适配青龙面板使用
+# 开源代码：https://github.com/BlueSkyXN/V2EX-Checkin
+# license：Apache-2.0 license
+# cron: 12 0,9 * * *
+
+
+
 import requests, json, time, os, re, sys
 sys.path.append('.')
 requests.packages.urllib3.disable_warnings()
@@ -6,9 +13,9 @@ try:
 except:
     pass
 
-cookie = os.environ.get("cookie")
-TGBOTAPI = os.environ.get("TGBOTAPI")
-TGID = os.environ.get("TGID")
+cookie = os.getenv("cookie")
+TGBOTAPI = os.getenv("TGBOTAPI")
+TGID = os.getenv("TGID")
 result = '🏆V2EX签到姬🏆\n'
 
 def pushtg(data):
@@ -103,4 +110,4 @@ def main_handler(event, context):
         print("----------V2EX开始尝试签到----------")
         main()
         print("----------V2EX签到执行完毕----------")
-        pushtg(result)
+        (result)
