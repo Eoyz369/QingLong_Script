@@ -1,6 +1,6 @@
 /*
 中国联通 v1.09
-
+Source: https://github.com/leafTheFish
 包含以下功能:
 阅光宝盒, 立减金打卡, 支付日活动(每个月26-28号), 阅读专区抽奖
 
