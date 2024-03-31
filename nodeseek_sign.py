@@ -1,5 +1,5 @@
 # Source: https://github.com/YYWO/NodeSeek-Signin
-# 细微修改
+# 修改多账号 
 import requests
 import os
 
