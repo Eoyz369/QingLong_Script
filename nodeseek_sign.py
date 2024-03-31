@@ -1,8 +1,11 @@
+# Source: https://github.com/YYWO/NodeSeek-Signin
+# 细微修改
+
 import requests
 import os
 
 random = "true"  # 随机签到1-x鸡腿为true，固定鸡腿*5为false
-Cookie = os.environ.get("COOKIE","")
+Cookie = os.environ.get("NodeSeek","")
 pushplus_token = os.environ.get("PUSHPLUS_TOKEN")
 telegram_bot_token = os.environ.get("TELEGRAM_BOT_TOKEN","")
 chat_id = os.environ.get("CHAT_ID","")
