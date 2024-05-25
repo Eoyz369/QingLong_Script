@@ -3,14 +3,11 @@
 import requests
 import os
 
-# random = "true"  # 随机签到1-x鸡腿为true，固定鸡腿*5为false
-# cookies = os.environ.get("NodeSeek","").split("#")  # 多个 Cookie 用 # 分隔
-# -- coding: utf-8 --
-import requests
-import os
 
 random = "true"  # 随机签到1-x鸡腿为true，固定鸡腿*5为false
-Cookie = os.environ.get("NodeSeek","colorscheme=light; sortBy=postTime; session=b7763de25b59c79f2e9db0f1012a3eb2; smac=1713689135-1RDbwWQILGvESTcAzyijjj-JJXmAnu0Rgf7CzI5SwBE; cf_clearance=Jsu9DDG_vZ1F2J_g2RqKgHgZUsLsErBFOieK3DZx0aY-1715178018-1.0.1.1-pZ_6gB_m._BdzJ1.cDXYDwzN7HjYF4DppUMHO0mbww2N6cadTweqRKl8g3YRMnw6xwM3wqF3ylWPvAF4eh7PhA; hmti_=1716266953-Yv8CCoXTN0sCa-cryfDSdJTE_UzU_O7zY9UPqKVPDvoz; cf_chl_rc_m=1; cf_clearance=1ay1KsRqogBJ7VBeGvRMXXWpB6v4dBnqvOv_Ke3zLyA-1716278547-1.0.1.1-aqAk3aQ_j9RUSDYE44nOFVmtQn3FqGxbbSIRREKHkACUg5q0_igEl_rZeKhkfSiH1IRQKvRaAYB67EpRuW4Z1A")
+cookies = os.environ.get("NodeSeek","").split("#")  # 多个 Cookie 用 # 分隔
+
+# Cookie = os.environ。get("NodeSeek","colorscheme=light; sortBy=postTime; session=b7763de25b59c79f2e9db0f1012a3eb2; smac=1713689135-1RDbwWQILGvESTcAzyijjj-JJXmAnu0Rgf7CzI5SwBE; cf_clearance=Jsu9DDG_vZ1F2J_g2RqKgHgZUsLsErBFOieK3DZx0aY-1715178018-1.0.1.1-pZ_6gB_m._BdzJ1.cDXYDwzN7HjYF4DppUMHO0mbww2N6cadTweqRKl8g3YRMnw6xwM3wqF3ylWPvAF4eh7PhA; hmti_=1716266953-Yv8CCoXTN0sCa-cryfDSdJTE_UzU_O7zY9UPqKVPDvoz; cf_chl_rc_m=1; cf_clearance=1ay1KsRqogBJ7VBeGvRMXXWpB6v4dBnqvOv_Ke3zLyA-1716278547-1.0.1.1-aqAk3aQ_j9RUSDYE44nOFVmtQn3FqGxbbSIRREKHkACUg5q0_igEl_rZeKhkfSiH1IRQKvRaAYB67EpRuW4Z1A")
 pushplus_token = os.environ.get("PUSHPLUS_TOKEN")
 telegram_bot_token = os.environ.get("TELEGRAM_BOT_TOKEN","")
 chat_id = os.environ.get("CHAT_ID","")
